@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: rgb(126, 123, 116);
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(243, 240, 229);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 0.4;
+}
+
+h1 {
+  color: rgb(126, 123, 116);
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+form {
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+  color: rgb(202, 200, 191);
+}
+
+.todos {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(170, 207, 219);
+}
+
+.todos li.completed::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  margin-right: 0.8rem;
+  margin-left: -2rem;
+  color: rgb(170, 207, 219);
+  font-size: 1.2rem;
+}
+
+small {
+  color: rgb(184, 182, 174);
+  margin-top: 1rem;
+}
+/* 4:31:18 */
